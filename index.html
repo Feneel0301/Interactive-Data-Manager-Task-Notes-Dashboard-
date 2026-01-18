@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Manager(Task & Notes Dashboard)</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/336739fd3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <h1>Interactive Data Manager</h1>
+      </header>
+      <section class="add-entry">
+        <h2>Add new Entry</h2>
+        <div class="add-entry-form">
+          <input type="hidden" class="entry-id" />
+          <input
+            type="text"
+            name="title"
+            id=""
+            class="title-input"
+            placeholder="Enter Title"
+          />
+          <input
+            type="text"
+            name="description"
+            id=""
+            class="desc-input"
+            placeholder="Enter description"
+          />
+          <button class="add-btn">Add</button>
+        </div>
+      </section>
+      <section class="controls">
+        <input
+          type="text"
+          name="search"
+          id=""
+          class="search-input"
+          placeholder="Search..."
+        />
+        <label for="filter">Filter:</label>
+        <select name="filter" id="filter" class="filter-select">
+          <option value="all">All</option>
+          <option value="active">Active</option>
+          <option value="completed">Completed</option>
+        </select>
+        <label for="sort">Sort:</label>
+        <select name="sort" id="sort" class="sort-select">
+          <option value="title">Sort by Title</option>
+          <option value="date">Sort by Date</option>
+        </select>
+      </section>
+      <section class="entries-list">
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f6f8;
+    font-family: 'Times New Roman', Times, serif;
+    color: #1f2937;
+}
+.app-container{
+    width: 1200px;
+    margin: 40px auto;
+    padding: 24px;
+}
+.header{
+    margin-bottom: 24px;
+}
+.header h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: #1f2937;
+}
+.add-entry{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+}
+.add-entry h2{
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+.add-entry-form{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.title-input,
+.desc-input,
+.status-select,
+.search-input,
+.filter-select,
+.sort-select {
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.title-input {
+  width: 260px;
+}
+
+.desc-input {
+  width: 400px;
+}
+
+.status-select {
+  width: 140px;
+}
+.add-btn {
+  height: 40px;
+  width: 100px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.controls{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+    background:#ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 6px rgba(0, 0, 0, 0.08);
+}
+.controls label{
+    font-weight: bold;
+}
+.search-input {
+  width: 360px;
+}
+
+.filter-select,
+.sort-select {
+  width: 150px;
+}
+.entries-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.entry-card{
+    background: #ffffff;
+    padding: 16px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.entry-info {
+  max-width: 700px;
+}
+
+.entry-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.entry-desc {
+  font-size: 14px;
+  color: #4b5563;
+  margin-top: 4px;
+}
+.entry-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.status-active {
+  background: #16a34a;
+}
+
+.status-completed {
+  background: #6b7280;
+}
+.edit-btn {
+  height: 34px;
+  width: 70px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.done-btn{
+  height: 34px;
+  width: 100px;
+  background: #24311e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.delete-btn {
+  height: 34px;
+  width: 80px;
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
